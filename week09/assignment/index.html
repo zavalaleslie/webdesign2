@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+
+        #myHeading {
+            background-color:pink;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        #myDiv {
+            height: 300px;
+            background-color: rgb(255, 214, 221);
+        }
+
+        h5 {
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+
+<body id="docBody">
+    <h1 id="myHeading">Welcome!</h1>
+
+    <div id="myDiv"></div>
+
+    <button href="#" id="colorChange">Dark mode</button>
+    <button href="#" id="sizeChange">Make smaller</button>
+
+    <script>
+        console.log("This is your page talking to you!");
+
+        let bigDiv = document.getElementById("myDiv");
+        let trigButton1 = document.getElementById("colorChange");
+        let trigButton2 = document.getElementById("sizeChange");
+        let docHeading = document.getElementById("myHeading");
+        let docBody = document.getElementById("docBody")
+
+        console.log(trigButton1);
+
+        trigButton1.addEventListener("click", function(){
+            let userAnswer = confirm("Are you okay to proceed with dark mode?");
+            console.log(userAnswer);
+
+            if(userAnswer == true){
+                docHeading.style.backgroundColor = "black";
+                docBody.style.color = "white";
+                bigDiv.style.backgroundColor = "gray";
+                let smallHeading = document.createElement("h5");
+                smallHeading.innerText = "This is dark mode!";
+            
+                bigDiv.appendChild(smallHeading);
+                
+                alert("The changes are now complete!");
+            }
+            else {
+                alert("No action will be taken.");
+            }
+
+        });
+
+        console.log(trigButton2);
+
+        trigButton2.addEventListener("click", function(){
+            let userAnswer = confirm("Are you sure you want to do this?");
+            console.log(userAnswer);
+
+            if(userAnswer == true){
+                docBody.style.width = "500px";
+                let smallHeading = document.createElement("h5");
+                smallHeading.innerText = "The box is smaller now!";
+            
+                bigDiv.appendChild(smallHeading);
+                
+                alert("The changes are now complete!");
+            }
+            else {
+                alert("No action will be taken.");
+            }
+
+        });
+
+        
+</script>
+
+
+    
+</body>
+</html>
