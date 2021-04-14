@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+}
+
+header {
+    width: auto;
+}
+
+header {
+    background-color: rgb(139, 223, 204);
+    width: auto;
+    padding: 10px;   
+}
+
+img.toggle-img {
+    padding: 10px 0px;
+    display:block;
+    margin:auto;
+}
+
+input#Toggle {
+    display: none;
+}
+
+input#Toggle:checked + ul {
+    display: block;
+}
+
+input#button1 {
+    display: none;
+}
+
+input#button1:checked {
+    display: block;
+}
+
+input#button2 {
+    display: none;
+}
+
+input#button2:checked {
+    display: block;
+}
+
+input#button3 {
+    display: none;
+}
+
+input#button3:checked {
+    display: block;
+}
+
+input#button4 {
+    display: none;
+}
+
+input#button4:checked {
+    display: block;
+}
+
+input#button5 {
+    display: none;
+}
+
+input#button5:checked {
+    display: block;
+}
+
+nav ul {
+    list-style:none;
+    margin: 0px;
+    padding: 20px 0px 0px;
+    display: none;
+}
+
+nav ul li {
+    padding: 15px 0px;
+    margin:auto;
+    text-align: center;
+    
+}
+
+nav ul a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform:lowercase;
+    font-size: 20px;
+}
+
+
+main {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#myImage {
+    width:30px;
+}
+
+.flower {
+width: 300px
+}
+
+.flower1 {
+    grid-area: flower1;
+}
+
+.flower2 {
+    grid-area: flower2;
+}
+
+.flower3 {
+    grid-area: flower3;
+}
+
+.flower4 {
+    grid-area: flower4;
+}
+
+.flower5 {
+    grid-area: flower5;
+}
+
+.grid-item {
+    width: 400px;
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 10px;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    width: 1635px;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-areas:
+    "flower1 flower2 flower3 flower4";
+}
+
+.flower5 {
+    width: 700px;
+}
