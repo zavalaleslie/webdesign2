@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+
+    <title>HW</title>
+
+</head>
+<body>
+    <main>
+        <div class="grid-container">
+
+            <div class="grid-item"><img src="p1.jpg" class="content-img p1"></div>
+            <div class="grid-item"><img src="p2.jpg" class="content-img p2"></div>
+            <div class="grid-item"><img src="p3.jpg" class="content-img p3"></div>
+            <div class="grid-item"><img src="p4.jpg" class="content-img p4"></div>
+        </div>
+
+        <div class="buttons">
+            <button id="btnHide">Click to hide the cat.</button>
+            <button id="btnToggle">Click to bring the cat back.</button>
+            
+            <button id="fadeToggle">Hamster time.</button>
+
+            <button id="slideToggle">Slide the dog away.</button>
+
+            <button id="animate">Begone bunny.</button>
+
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#btnHide").click(function(){
+                $(".p1").hide();
+            });
+
+            $("#btnToggle").click(function(){
+               $(".p1").toggle(); 
+            })
+
+            $("#fadeToggle").click(function(){
+                $(".p4").fadeToggle(3000);
+            })
+
+            $("#slideToggle").click(function(){
+                $(".p2").slideToggle(3000, function(){
+                    $(".p2").after("<p>:(");
+                });
+            })
+
+            $("#animate").click(function(){
+                $(".p3").animate({
+                    height: "0px",
+                    width: "0px",
+                    opacity: "0.2",
+                }, 1000);
+            })
+        });
+    </script>
+</body>
+</html>

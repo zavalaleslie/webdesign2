@@ -1,0 +1,40 @@
+
+body {
+    margin: 40px;
+  }
+
+header {
+    padding: 20px;    
+}
+
+
+nav ul li {
+    color: black;
+    padding: 15px; 
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.buttons {
+    margin:10px
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 340px  340px;
+      }
+
+.grid-item {
+    background-color: rgb(255, 212, 212);
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .content-img {
+      width: 300px;
+  }
+  
