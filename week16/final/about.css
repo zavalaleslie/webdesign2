@@ -1,0 +1,129 @@
+#logoimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: 'Rancho', cursive;
+}
+
+main {
+  font-family: 'Viaoda Libre', cursive;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding: 15px; 
+  font-family: 'Rancho', cursive;
+  font-size: 20px;
+}
+
+nav ul a {
+  color: rgb(255, 46, 126);
+  text-decoration: none;
+}
+
+.flex {
+
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 5px;
+  }
+
+  header {
+    padding: 10px;
+}
+
+
+.header {
+        grid-area: header;
+          }
+
+.about {
+        grid-area: about;
+            }
+
+.grid-item {
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        padding: 1px;
+                }
+
+      .grid-container {
+        display: grid;
+        grid-gap: 1em;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+         "header"
+         "about";
+      }
+
+      .grid-container {
+        grid-gap: 5px;
+        grid-template-columns: 200px 200px;
+        grid-template-areas:
+            "header header"
+            "about about";            
+              }
+
+.content-img {
+    width:200px;
+}
+
+@media(min-width: 768px){
+
+    h1 {
+      font-size: 25px;
+    }
+    
+    main {
+      font-size: 17px;
+    }
+    
+    nav ul li {
+      font-size: 23px;
+    }
+
+    .grid-container {
+        grid-gap: 5px;
+        grid-template-columns: 300px 300px;
+        grid-template-areas:
+            "header header"
+            "about about";            
+              }
+    
+    }
+    
+    @media(min-width: 1000px){
+    
+      h1 {
+        font-size: 30px;
+      }
+      
+      main {
+        font-size: 19px;
+      }
+    
+      nav ul li {
+        font-size: 30px;
+      }
+
+      .grid-container {
+        grid-gap: 5px;
+        grid-template-columns: 500px 500px;
+        grid-template-areas:
+            "header header"
+            "about about";            
+              }
+    }

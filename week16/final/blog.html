@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="blog.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rancho&family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+
+    <title>final</title>
+</head>
+<body>
+
+<header>
+    
+    <a href="home.html"><img src="logo.png" alt="main logo" id ="logoimg"></a>
+    <nav class="flex">
+
+         <ul class="flex">
+
+            <li><a href="home.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="donations.html">donate</a></li>
+            <li><a href="blog.html">blog</a></li>
+
+        </ul>
+    </nav>
+</header>
+    <main>
+
+        <div class="grid-container">
+
+        <div class="grid-item header"><h1>Blog</h1></div>
+        <div class="para"> We love updating about our goals and adventures! Follow our Blog to always know what we are up to.</p></div>
+        <div class="button1"><button id="btnHide">Hide our Blog Posts!</button> </div>
+
+        <div class="blogPost">
+        <div class="grid-item blog1">Taller Gratuito Club del Libro Chicas Mom, Inc.
+
+            “No fuiste tú, fui yo”
+            por Maria de la Luz 
+            
+            Sábado 12 de Junio del 2021
+            1:00PM Pacifico
+            
+            Taller trasmitido
+            por ZOOM<img src="1.jpg" class="content-img"></div>
+
+        <div class="grid-item blog2">Serie de 4 Talleres Gratuitos
+            “Tecnologia, Herramienta para poder escalar un negocio en linea”
+            
+            Iniciando Sábado 8 de Mayo 2021
+            
+            Trasmitido por ZOOM
+            
+            4:00PM Pacifico<img src="2.jpeg" class="content-img"></div>
+
+        <div class="grid-item blog3">Serie de 6 Talleres Gratuitos
+“Nuestra Vida en Equilibrio”
+
+Iniciando Miércoles 28 de Abril 2021
+
+Trasmitido por ZOOM
+
+6:30PM Pacifico<img src="3.jpg" class="content-img"></div>
+        </div>
+
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#btnHide").click(function(){
+                $(".blogPost").hide();
+            });
+
+        });
+    </script>
+    <footer></footer>
+
+</body>
+</html>

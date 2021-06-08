@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="donations.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rancho&family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+    <title>final</title>
+</head>
+<body>
+
+<header>
+    
+    <a href=""><img src="logo.png" alt="main logo" id ="logoimg"></a>
+    <nav class="flex">
+
+         <ul class="flex">
+
+            <li><a href="home.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="donations.html">donate</a></li>
+            <li><a href="blog.html">blog</a></li>
+
+        </ul>
+    </nav>
+</header>
+    <main>
+        <div class="grid-item header"><h1>Donate</h1></div>
+
+<form id="mainform" action="" method="post">
+					<label for ="nameBox" id="nameLabel" class="userLabels">
+					Name:</label> 
+						<input id="nameBox" type = "text" name="username" size="15" maxlength = "30"/>
+					
+					<label for ="emailBox" id="emailLabel" class="userLabels">
+				Email:</label>
+					<input id="emailBox"  type = "email" name = "username" size="15" maxlength = "30"/>
+					
+					
+					<label for ="subjectBox" id="subjectLabel" class="userLabels">
+				Subject:</label> 
+					<input id="subjectBox"  type = "text" name = "username" size="15" maxlength = "30" />
+					
+					<label for ="messageBox" id="messageLabel" class="userLabels">
+				Message:</label> 
+					<textarea id="messageBox"  rows="4" cols="50" > </textarea>
+					<button onclick="myFunction()">Submit</button>
+			</form>
+       
+
+        <script>
+        function myFunction() {
+          alert("Thank you!");
+        }
+        </script>
+
+    </main>
+    <footer></footer>
+
+</body>
+</html>

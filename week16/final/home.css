@@ -1,0 +1,199 @@
+#logoimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: 'Rancho', cursive;
+}
+
+main {
+  font-family: 'Viaoda Libre', cursive;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding: 15px; 
+  font-family: 'Rancho', cursive;
+  font-size: 20px;
+}
+
+nav ul a {
+  color: rgb(255, 46, 126);
+  text-decoration: none;
+}
+
+.content-img {
+    width: 400px;
+}
+
+.content-img2 {
+    width: 150px;
+}
+
+.flex {
+
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 5px;
+  }
+
+  header {
+    padding: 10px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+      }
+  
+.content2 {
+    grid-area: content2;
+      }
+  
+.content {
+    grid-area: content;
+      }
+  
+.header {
+    grid-area: header;
+      }
+  
+.sidebar2 {
+    grid-area: sidebar2;
+      }
+
+.contact {
+    grid-area: contact;
+        }      
+  
+.grid-container {
+      display: grid;
+      grid-gap: 1em;
+      justify-content: center;
+      align-items: center;
+      grid-template-areas:
+       "header"
+       "sidebar"
+       "content"
+       "content2"
+       "sidebar2"
+       "contact"
+    }
+  
+    
+  
+.grid-container {
+    grid-gap: 5px;
+    grid-template-columns: 180px 180px;
+    grid-template-areas:
+        "header header"
+        "sidebar sidebar"
+        "sidebar2 sidebar2"
+        "content content"
+        "contact content2";;
+              
+          }
+      
+  
+.grid-item {
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 1px;
+  }
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}  
+
+.header {
+  padding: 5px;
+  width: auto;
+  margin: auto;
+  }
+
+.sidebar2, .sidebar {
+  padding: 10px;
+  width: auto;
+  margin: auto;
+  }
+
+@media(min-width: 768px){
+.flex {
+    flex-direction: row; 
+    }
+   
+
+.grid-container {
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;   
+    grid-template-columns: 300px 300px;
+    grid-template-areas:
+        "header header"
+        "sidebar sidebar"
+      "sidebar2 sidebar2"
+      "content content2"
+      "contact contact";
+
+}
+
+.content-img {
+  width: 300px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+main {
+  font-size: 17px;
+}
+
+nav ul li {
+  font-size: 23px;
+}
+
+}
+
+@media(min-width: 1000px){
+  
+  .grid-container {
+    grid-template-columns: 600px 600px ;
+    justify-content: center; 
+    grid-template-areas:
+    "header header"
+    "sidebar sidebar2"
+  "content content2"
+  "contact contact";}
+
+  .content-img {
+    width: 600px;
+  }
+
+  .content-img2 {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  
+  main {
+    font-size: 19px;
+  }
+
+  nav ul li {
+    font-size: 30px;
+  }
+}
